@@ -1,0 +1,453 @@
+:root {
+    --main-color: #e65f78;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: "Poppins", sans-serif;
+}
+
+h5 {
+    color: black !important;
+}
+
+.lead {
+    color: black !important;
+}
+
+body {
+    
+    background-color: #161a28;
+    font-family: "Montserrat", sans-serif;
+    color: aliceblue;
+}
+
+/* ================= start navbar ======================= */
+.testImg img{
+    transition: all 0.5s;
+}
+.testImg:hover img{
+    transform: scale(1.1);
+}
+.main-nav .navbar {
+    background-color: transparent !important;
+}
+
+.main-nav .navbar {
+    background-color: rgb(41, 49, 49);
+}
+
+.main-nav .navbar .nav-item .nav-link.active {
+    color: rgb(0, 0, 0);
+}
+
+.main-nav .navbar .nav-item .nav-link.active::after {
+    content: ' ';
+    width: 90%;
+    height: 3px;
+    background-color: rgb(0, 0, 0);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transition: all 1s;
+}
+
+.main-nav .navbar .navbar-brand {
+    font-weight: 500;
+    font-size: 30px;
+}
+
+.main-nav .navbar .nav-item {
+    position: relative;
+    margin-inline: 0.5rem;
+    overflow: hidden;
+}
+
+
+.main-nav .navbar .nav-item::after {
+    content: ' ';
+    width: 90%;
+    height: 3px;
+    background-color: black;
+    position: absolute;
+    bottom: 0;
+    left: -100%;
+    transition: all 1s;
+}
+
+.main-nav .navbar .nav-item:hover::after {
+    left: 0;
+}
+
+/* ================= end navbar ======================= */
+
+/* ================= start  home section ======================= */
+.home {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.685), rgba(0, 0, 0, 0.626)), url(../images/imgs/bg.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+}
+
+.typing spean {
+    color: white;
+    font-weight: 100;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+.home-icon a i {
+    margin-right: 15px;
+}
+
+.hello {
+    font-weight: 800;
+}
+
+/* ============================== end  home section ========================================== */
+.About-Me {
+    color: black;
+}
+
+.about-text {
+    color: #748182;
+    font-size: 15px;
+}
+
+.about-spean {
+    color: #748182;
+    font-size: 12pt;
+}
+
+.about-text-2 {
+    color: #748182;
+}
+
+.progress {
+    margin-bottom: 19px;
+}
+
+.progress p {
+    font-size: 5pt;
+}
+
+.progres-text {
+    text-align: center;
+}
+
+.center-vertical {}
+
+.about-btn {
+    display: flex;
+    justify-content: start;
+}
+
+.btn-1 {
+    margin-right: 5px;
+    color: white;
+    background-color: black;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+.btn-2 {
+    border-radius: 5px;
+    padding: 5px;
+}
+
+
+.btn-1:hover {
+    background-color: white;
+    color: black;
+}
+
+.btn-2:hover {
+    background-color: black;
+    color: white;
+}
+
+/* ============================== start services section ========================================== */
+
+.services {
+    color: black;
+    background-color: #F7F7F7;
+}
+
+.services .ineer {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    background-color: #FFFFFF;
+    padding-top: 17px;
+}
+
+.ineer h3 {
+    margin-top: 17px;
+    margin-bottom: 17px;
+}
+
+.services p {
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+}
+
+.services i {}
+
+
+.ineer .circle {
+    width: 80px;
+    height: 80px;
+
+    display: block;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    border: 5px solid transparent;
+    background-color: #F6F6F6;
+    transition: 0.6s;
+}
+
+.ineer:hover .circle {
+    background-color: black;
+    border: 5px solid #565e6e83;
+    color: white;
+}
+
+
+
+
+/* ============================== start section ========================================== */
+
+.nav-item .nav-link.active {
+    color: black !important;
+}
+
+.nav-item button {
+    color: black;
+    background-color: transparent !important;
+}
+
+.nav-item button:hover {
+    color: black;
+}
+
+.nav .nav-item {
+    position: relative;
+    margin-inline: 0.5rem;
+    overflow: hidden;
+
+}
+
+
+.nav .nav-item::after {
+    content: ' ';
+    width: 90%;
+    height: 3px;
+    background-color: black;
+    position: absolute;
+    bottom: 0;
+    left: -100%;
+    transition: all 1s;
+}
+
+.nav .nav-item:hover::after {
+    left: 0;
+}
+
+.ineer {
+    position: relative;
+    overflow: hidden;
+    padding: 20px;
+    transition: 0.6s;
+}
+
+.image-layer {
+    background-color: rgba(255, 255, 255, 0.817);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 999;
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    opacity: 0;
+    transition: 0.5s;
+}
+
+.ineer:hover .image-layer {
+    opacity: 0.8;
+    transition: 0.6s;
+}
+
+.content {
+    color: black;
+}
+
+.content i {}
+
+.portfolio .ineer:hover img {
+    transform: scale(1.1);
+    overflow: hidden;
+}
+
+
+
+
+.circlee {
+    width: 40px;
+    height: 40px;
+
+    display: block;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    border: 5px solid transparent;
+    background-color: #F6F6F6;
+    transition: 0.6s;
+}
+
+.circlee:hover {
+    background-color: rgb(0, 0, 0);
+    border: 5px solid #565e6e83;
+    color: white;
+}
+
+.content p {
+    font-family: "Poppins", sans-serif !important;
+}
+
+
+.carousel-item p {
+    color: #748182;
+}
+
+.slider-image {
+    width: 90px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ============================== start clients section ========================================== */
+
+
+
+
+
+
+/* ============================== start section ========================================== */
+
+.Team {
+    color: black;
+}
+
+.team-caption {
+    background-color: #5B5B5B;
+}
+
+.carousel-indicators button {
+    padding: 10px !important;
+    width: 10px !important;
+    height: 10px !important;
+    border-radius: 50% !important;
+}
+
+.team .ineer:hover {
+    transform: scale(1.1);
+}
+
+.team-img {
+    position: relative;
+}
+
+.team-layer {
+    position: absolute;
+    background-color: rgba(255, 255, 255, 0);
+    transition: 0.5s;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 999;
+    opacity: 0;
+}
+
+.team-layer:hover {
+    background-color: rgba(255, 255, 255, 0.758) ;opacity: 0.8;
+}
+
+.team-layer:hover {
+    transform: translate();
+}
+
+.team-icons {
+   
+}
+
+.circleee {
+    background-color: black;
+    color: white;
+    border-radius: 50%;
+    height: 30px;
+    width: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px black solid;
+}
+.circleee:hover{background-color: white;color: black;}
+.team .ineer{overflow: hidden;}
+
+/* ============================== start section ========================================== */
+
+.contact p {
+    color: #5B5B5B;
+    font-size: 12pt;
+}
+
+.contact-bt button:hover {
+    color: black !important;
+    background-color: white !important;
+}
+
+.btnnn button:hover {
+    color: black !important;
+    background-color: white !important;
+}
+
+/* ============================== start section  copy right ========================================== */
+
+
+.copy-right {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+    color: grey;
+    align-items: center;
+    min-height: 20vh;
+}
